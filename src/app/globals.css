@@ -17,11 +17,27 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+}
+
+.hero-section {
+  height: calc(100vh - 60px);
+}
+.card-hero {
+  width: 380px;
+  height: 450px;
+}
+
+.card-image-1 {
+  width: 340px;
+  height: 380px;
+}
+
+.card-image-small .image {
+  width: auto;
+  height: 230px;
+}
+
+.card-image-small .image .object-cover {
+  height: 230px;
 }

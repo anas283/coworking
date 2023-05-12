@@ -1,113 +1,188 @@
-import Image from 'next/image'
+import Image from "next/image";
+import { Navbar } from "./components/navbar";
+import CardHeroImage from "../../public/card-hero-bg.png";
+import CardImage1 from "../../public/card-image-1.png";
+import CardImage2 from "../../public/card-image-2.png";
+import YellowCircle from "../../public/yellow-circle.png";
+import ImageSmall1 from "../../public/image-small-1.png";
+import ImageSmall2 from "../../public/image-small-2.png";
+import ImageSmall3 from "../../public/image-small-3.png";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <Navbar />
+
+      <div className="hero-section max-w-screen-lg mx-auto flex items-center w-full">
+        <div className="flex flex-row w-full">
+          <div className="w-1/2">
+            <h6 className="text-sm font-semibold mt-8">Coworking Spaces for All</h6>
+            <h1 className="text-7xl font-bold mt-3">
+              The best <br />
+              coworking <br />
+              in NYC
+            </h1>
+            <h6 className="w-100 text-sm font-base text-gray-500 mt-3">
+              Coworking is all  about being your own boss, and that’s why
+              it’s such a great fit for freelancers. But it can be hard to
+              know what you’re getting into when you first start out.
+            </h6>
+            <button class="bg-green-600 hover:bg-green-700 text-xs text-white font-medium py-2 px-4 rounded mt-5">
+              See Availability
+            </button>
+          </div>
+          <div className="w-1/2 flex justify-end">
+            <div className="card card-hero relative">
+              <div className="overflow-hidden rounded-xl">
+                <Image src={CardHeroImage} />
+              </div>
+              <div class="w-40 h-40 p-4 bg-white rounded-xl absolute bottom-5 right-5">
+                <h2 class="text-3xl font-medium">5K+</h2>
+                <h6 class="text-sm card-subtitle mt-2">Visitors per month</h6>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div style={{ backgroundColor: '#EBFBEE' }}>
+        <div className="py-20 max-w-screen-lg mx-auto flex items-center w-full">
+          <div className="flex flex-row w-full">
+            <div className="w-1/2">
+              <div class="card-image-1 card relative">
+                <div className="overflow-hidden rounded-xl">
+                  <Image src={CardImage1} />
+                </div>
+                <div class="w-48 h-24 p-4 bg-white rounded-xl absolute top-12 right-0 translate-x-24 drop-shadow-2xl">
+                  <h2 class="text-3xl font-medium">30+</h2>
+                  <h6 class="text-sm card-subtitle mt-2">Rooms available</h6>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2 flex items-center">
+              <div>
+                <h1 className="text-5xl font-medium mt-3">
+                  Coworking Spaces <br />
+                  for Startup
+                </h1>
+                <h6 className="w-100 text-sm font-base text-gray-500 mt-3">
+                  This guide will give you an overview of the different types of
+                  coworking spaces available, and help you decide which one is
+                  right for you.
+                </h6>
+                <button class="bg-green-600 hover:bg-green-700 text-xs text-white font-medium py-2 px-4 rounded mt-5">
+                  Get Workspace
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div style={{ backgroundColor: '#0A4319' }} className="relative overflow-hidden">
+        <div className="py-20 max-w-screen-lg mx-auto flex items-center w-full relative z-10">
+          <div className="flex flex-row w-full">
+            <div className="w-1/2 flex items-center">
+              <div>
+                <h1 className="text-5xl font-medium mt-3 text-white">
+                  The Ultimate Guide to 
+                  Coworking Spaces
+                </h1>
+                <h6 className="w-3/4 text-sm font-base text-white mt-10">
+                  The Ultimate Guide to Coworking Spaces - This isn’t
+                  just a list of coworking spaces-- it also includes tips on
+                  how to find the best one for your needs and what to 
+                  look out for when choosing one.
+                </h6>
+                <div className="w-3/4 flex justify-between mt-5">
+                  <div>
+                    <h2 class="text-3xl text-white font-medium">25</h2>
+                    <h6 class="text-sm text-white card-subtitle mt-2">Meeting Rooms</h6>
+                  </div>
+                  <div>
+                    <h2 class="text-3xl text-white font-medium">30</h2>
+                    <h6 class="text-sm text-white card-subtitle mt-2">Event Spaces</h6>
+                  </div>
+                  <div>
+                    <h2 class="text-3xl text-white font-medium">25</h2>
+                    <h6 class="text-sm text-white card-subtitle mt-2">Working Spaces</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="w-1/2 flex justify-end">
+              <div class="card-image-1 card relative flex items-center">
+                <div className="overflow-hidden rounded-xl">
+                  <Image src={CardImage2} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <Image src={YellowCircle} className="absolute right-0 bottom-0 z-0 translate-x-48 translate-y-48" />
       </div>
-    </main>
+
+      <div style={{ backgroundColor: '#EBFBEE' }}>
+        <div className="py-20 max-w-screen-lg mx-auto w-full">
+          <div className="flex justify-between w-full">
+            <div className="w-1/2">
+              <h3 className="text-3xl font-medium">
+                How to Find the Perfect <br />
+                Coworking Space
+              </h3>
+            </div>
+            <div className="w-1/2 flex items-center justify-end">
+              <p className="w-3/4 text-sm font-base text-gray-500">
+                If you want more specific advice on finding the right
+                space, this article will tell you exactly how to do it!
+              </p>
+            </div>
+          </div>
+
+          <div className="flex justify-between w-full mt-12"
+            style={{ marginLeft: '-5px', marginRight: '-5px' }}
+          >
+            <div className="w-4/12 px-2">
+              <div class="card-image-small relative flex items-center">
+                <div className="overflow-hidden rounded-xl image">
+                  <Image src={ImageSmall1} className="object-cover" />
+                </div>
+                <div class="w-11/12 h-20 py-2 px-6 bg-white rounded-xl absolute bottom-4 mx-auto left-0 right-0">
+                  <h6 class="text-md font-medium card-subtitle mt-2">
+                    Are Coworking Spaces Right For You?
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div className="w-4/12 px-2">
+              <div class="card-image-small relative flex items-center">
+                <div className="overflow-hidden rounded-xl image">
+                  <Image src={ImageSmall2} className="object-cover" />
+                </div>
+                <div class="w-11/12 h-20 py-2 px-6 bg-white rounded-xl absolute bottom-4 mx-auto left-0 right-0">
+                  <h6 class="text-md font-medium card-subtitle mt-2">
+                    The Benefit of Coworking Spaces for Small Businesses
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div className="w-4/12 px-2">
+              <div class="card-image-small relative flex items-center">
+                <div className="overflow-hidden rounded-xl image">
+                  <Image src={ImageSmall3} className="object-cover" />
+                </div>
+                <div class="w-11/12 h-20 py-2 px-6 bg-white rounded-xl absolute bottom-4 mx-auto left-0 right-0">
+                  <h6 class="text-md font-medium card-subtitle mt-2">
+                    How to Find the Best Coworking Spaces for You
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   )
 }
