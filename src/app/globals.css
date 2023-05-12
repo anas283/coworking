@@ -41,3 +41,12 @@ body {
 .card-image-small .image .object-cover {
   height: 230px;
 }
+
+.card-slider {
+  width: 800px;
+  height: 250px;
+}
+.card-slider .image .object-cover {
+  width: 800px;
+  height: 250px;
+}
