@@ -15,6 +15,9 @@ import ComfortableImage from "../../public/comfortable.png";
 import ParkingImage from "../../public/parking.png";
 import MosqueImage from "../../public/mosque.png";
 import HourImage from "../../public/24-hour.png";
+import DotsImage from "../../public/dots.png";
+import CustomerImage from "../../public/customer.png";
+import LetterImage from "../../public/c-big.png";
 
 export default function Home() {
   return (
@@ -262,6 +265,37 @@ export default function Home() {
           <h6 className="text-base text-center">
             24-hours Admin Helps
           </h6>
+        </div>
+      </div>
+
+      <div className="relative">
+        <Image className="w-24 h-auto absolute left-4 top-0" src={DotsImage} alt="dot" />
+        <div className="py-20 max-w-screen-lg mx-auto w-full px-40">
+          <div className="flex justify-between">
+            <div className="w-1/2 px-4">
+              <div className="h-80 relative flex items-center">
+                <div className="overflow-hidden rounded-xl image">
+                  <Image src={CustomerImage} className="object-cover" alt="coca" />
+                </div>
+                <Image className="absolute w-40 h-auto left-0 bottom-8 -translate-x-24" src={LetterImage} alt="letter" />
+              </div>
+            </div>
+            <div class="w-1/2 px-4">
+              <h2 className="text-3xl font-medium">
+                What you customer says about Coca Workspace
+              </h2>
+              <h6 className="text-sm font-base text-gray-500 mt-10">
+                “Really incredible space for me and my team to
+                every single day work. It has a lot of facilities
+                and we can connect with other agency also
+                freelancer in here. So far I’m happy to be here
+                and hopefully I can make a same concept like
+                this workspace. Cheerss!!!”
+              </h6>
+              <h6 className="text-sm font-medium mt-4">Sam Andrew</h6>
+              <h6 className="text-sm font-base text-gray-500">Project Manager at Microsoft</h6>
+            </div>
+          </div>
         </div>
       </div>
 
