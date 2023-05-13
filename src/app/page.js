@@ -18,6 +18,7 @@ import HourImage from "../../public/24-hour.png";
 import DotsImage from "../../public/dots.png";
 import CustomerImage from "../../public/customer.png";
 import LetterImage from "../../public/c-big.png";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   return (
@@ -47,7 +48,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-xl">
                 <Image src={CardHeroImage} alt="coca" />
               </div>
-              <div className="w-40 h-40 p-4 bg-white rounded-xl absolute bottom-5 right-5">
+              <div className="w-40 h-24 p-4 bg-white rounded-xl absolute bottom-5 right-5">
                 <h2 className="text-3xl font-medium">5K+</h2>
                 <h6 className="text-sm card-subtitle mt-2">Visitors per month</h6>
               </div>
@@ -299,6 +300,7 @@ export default function Home() {
         </div>
       </div>
 
+      <Footer />
     </div>
   )
 }
