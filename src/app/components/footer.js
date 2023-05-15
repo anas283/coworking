@@ -5,7 +5,7 @@ import ArrowRight from "../../../public/arrow-right.png";
 export const Footer = () => {
   return (
     <div style={{ backgroundColor: '#EBFBEE' }}>
-      <div className="py-16 max-w-screen-lg mx-auto w-full">
+      <div className="py-16 max-w-screen-lg mx-auto w-full px-4 lg:px-0">
 
         <div className="flex justify-between">
           <div>
@@ -19,9 +19,9 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="w-11/12 flex justify-between mt-10">
+        <div className="w-11/12 flex flex-wrap md:justify-between mt-10">
           <div>
-            <h4 className="text-2xl font-medium w-3/4">
+            <h4 className="text-2xl font-medium w-100 md:w-3/4">
               Subscribe to our newsletter
             </h4>
             <div className="w-fit relative">
@@ -33,7 +33,7 @@ export const Footer = () => {
               </div> 
             </div>
           </div>
-          <div>
+          <div className="w-1/2 md:w-fit mt-10 md:mt-0">
             <h6 className="text-md text-green-500">Services</h6>
             <div className="flex flex-col">
               <a href="#" className="text-sm mt-3">Email Marketing</a>
@@ -42,7 +42,7 @@ export const Footer = () => {
               <a href="#" className="text-sm mt-3">Offline</a>
             </div>
           </div>
-          <div>
+          <div className="w-1/2 md:w-fit mt-10 md:mt-0">
             <h6 className="text-md text-green-500">About</h6>
             <div className="flex flex-col">
               <a href="#" className="text-sm mt-3">Our Story</a>
@@ -51,7 +51,7 @@ export const Footer = () => {
               <a href="#" className="text-sm mt-3">Careers</a>
             </div>
           </div>
-          <div>
+          <div className="w-1/2 md:w-fit mt-10 md:mt-0">
             <h6 className="text-md text-green-500">Help</h6>
             <div className="flex flex-col">
               <a href="#" className="text-sm mt-3">FAQs</a>

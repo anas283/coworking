@@ -22,14 +22,14 @@ import { Footer } from "./components/footer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar />
 
-      <div className="hero-section max-w-screen-lg mx-auto flex items-center w-full">
-        <div className="flex flex-row w-full">
-          <div className="w-1/2">
-            <h6 className="text-sm font-semibold mt-8">Coworking Spaces for All</h6>
-            <h1 className="text-7xl font-bold mt-3">
+      <div className="hero-section max-w-screen-lg mx-auto flex items-center w-full px-4 lg:px-0">
+        <div className="flex flex-col md:flex-row w-full">
+          <div className="w-100 md:w-1/2">
+            <h6 className="text-sm font-semibold mt-0 md:mt-8">Coworking Spaces for All</h6>
+            <h1 className="text-6xl md:text-7xl font-bold mt-3">
               The best <br />
               coworking <br />
               in NYC
@@ -43,8 +43,8 @@ export default function Home() {
               See Availability
             </button>
           </div>
-          <div className="w-1/2 flex justify-end">
-            <div className="card card-hero relative">
+          <div className="w-100 md:w-1/2 flex justify-end">
+            <div className="card card-hero relative mt-12 md:mt-0 overflow-hidden rounded-xl">
               <div className="overflow-hidden rounded-xl">
                 <Image src={CardHeroImage} alt="coca" />
               </div>
@@ -58,22 +58,22 @@ export default function Home() {
       </div>
 
       <div style={{ backgroundColor: '#EBFBEE' }}>
-        <div className="py-20 max-w-screen-lg mx-auto flex items-center w-full">
-          <div className="flex flex-row w-full">
-            <div className="w-1/2">
+        <div className="py-20 max-w-screen-lg mx-auto flex items-center w-full px-4 lg:px-0">
+          <div className="flex flex-col md:flex-row w-full">
+            <div className="w-100 md:w-1/2">
               <div className="card-image-1 card relative">
-                <div className="overflow-hidden rounded-xl">
+                <div className="inner overflow-hidden rounded-xl">
                   <Image src={CardImage1} alt="coca" />
                 </div>
-                <div className="w-48 h-24 p-4 bg-white rounded-xl absolute top-12 right-0 translate-x-24 drop-shadow-2xl">
+                <div className="w-48 h-24 p-4 bg-white rounded-xl absolute top-5 md:top-12 right-5 md:right-0 translate-x-0 md:translate-x-24 drop-shadow-2xl">
                   <h2 className="text-3xl font-medium">30+</h2>
                   <h6 className="text-sm card-subtitle mt-2">Rooms available</h6>
                 </div>
               </div>
             </div>
-            <div className="w-1/2 flex items-center">
-              <div>
-                <h1 className="text-5xl font-medium mt-3">
+            <div className="w-100 md:w-1/2 flex items-center">
+              <div className="mt-5 md:mt-0">
+                <h1 className="text-4xl md:text-5xl font-medium mt-3">
                   Coworking Spaces <br />
                   for Startup
                 </h1>
@@ -92,21 +92,21 @@ export default function Home() {
       </div>
 
       <div style={{ backgroundColor: '#0A4319' }} className="relative overflow-hidden">
-        <div className="py-20 max-w-screen-lg mx-auto flex items-center w-full relative z-10">
-          <div className="flex flex-row w-full">
-            <div className="w-1/2 flex items-center">
+        <div className="py-20 max-w-screen-lg mx-auto flex items-center w-full relative z-10 px-4 lg:px-0">
+          <div className="flex flex-col md:flex-row w-full">
+            <div className="w-100 md:w-1/2 flex items-center">
               <div>
-                <h1 className="text-5xl font-medium mt-3 text-white">
+                <h1 className="text-4xl md:text-5xl font-medium mt-0 md:mt-3 text-white">
                   The Ultimate Guide to 
                   Coworking Spaces
                 </h1>
-                <h6 className="w-3/4 text-sm font-base text-white mt-10">
+                <h6 className="w-100 md:w-3/4 text-sm font-base text-white mt-10">
                   The Ultimate Guide to Coworking Spaces - This isn’t
                   just a list of coworking spaces-- it also includes tips on
                   how to find the best one for your needs and what to 
                   look out for when choosing one.
                 </h6>
-                <div className="w-3/4 flex justify-between mt-5">
+                <div className="w-100 md:w-3/4 flex justify-between mt-5">
                   <div>
                     <h2 className="text-3xl text-white font-medium">25</h2>
                     <h6 className="text-sm text-white card-subtitle mt-2">Meeting Rooms</h6>
@@ -122,8 +122,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 flex justify-end">
-              <div className="card-image-1 card relative flex items-center">
+            <div className="w-100 md:w-1/2 flex justify-end">
+              <div className="card-image-1 card relative flex items-center mt-24 mb-20 md:mb-0 md:mt-0">
                 <div className="overflow-hidden rounded-xl">
                   <Image src={CardImage2} alt="coca" />
                 </div>
@@ -136,26 +136,26 @@ export default function Home() {
       </div>
 
       <div style={{ backgroundColor: '#EBFBEE' }}>
-        <div className="py-20 max-w-screen-lg mx-auto w-full">
-          <div className="flex justify-between w-full">
-            <div className="w-1/2">
+        <div className="py-20 max-w-screen-lg mx-auto w-full px-4 lg:px-0">
+          <div className="flex flex-col md:flex-row w-full">
+            <div className="w-100 md:w-1/2">
               <h3 className="text-3xl font-medium">
                 How to Find the Perfect <br />
                 Coworking Space
               </h3>
             </div>
-            <div className="w-1/2 flex items-center justify-end">
-              <p className="w-3/4 text-sm font-base text-gray-500">
+            <div className="w-100 md:w-1/2 flex items-center md:justify-end mt-3 md:mt-0">
+              <p className="w-100 md:w-3/4 text-sm font-base text-gray-500">
                 If you want more specific advice on finding the right
                 space, this article will tell you exactly how to do it!
               </p>
             </div>
           </div>
 
-          <div className="flex justify-between w-full mt-12"
+          <div className="flex flex-col md:flex-row w-full mt-12"
             style={{ marginLeft: '-5px', marginRight: '-5px' }}
           >
-            <div className="w-4/12 px-2">
+            <div className="w-100 md:w-4/12 px-2 mb-4 md:mb-0">
               <div className="card-image-small relative flex items-center">
                 <div className="overflow-hidden rounded-xl image">
                   <Image src={ImageSmall1} className="object-cover" alt="coca" />
@@ -167,7 +167,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-4/12 px-2">
+            <div className="w-100 md:w-4/12 px-2 mb-4 md:mb-0">
               <div className="card-image-small relative flex items-center">
                 <div className="overflow-hidden rounded-xl image">
                   <Image src={ImageSmall2} className="object-cover" alt="coca" />
@@ -179,7 +179,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="w-4/12 px-2">
+            <div className="w-100 md:w-4/12 px-2 mb-4 md:mb-0">
               <div className="card-image-small relative flex items-center">
                 <div className="overflow-hidden rounded-xl image">
                   <Image src={ImageSmall3} className="object-cover" alt="coca" />
@@ -196,17 +196,17 @@ export default function Home() {
       </div>
 
       <div>
-        <div className="py-20 max-w-screen-lg mx-auto w-full">
-          <div className="flex justify-between w-full">
-            <div className="w-1/2">
+        <div className="py-20 max-w-screen-lg mx-auto w-full px-4 lg:px-0">
+          <div className="flex flex-col md:flex-row w-full">
+            <div className="w-100 md:w-1/2">
               <h3 className="text-3xl font-medium">
                 When you need an <br /> inspiring place to work
               </h3>
             </div>
-            <div className="w-1/2 flex items-center justify-end">
-              <p className="w-3/4 text-sm font-base text-gray-500">
+            <div className="w-100 md:w-1/2 flex items-center md:justify-end mt-3 md:mt-0">
+              <p className="w-100 md:w-3/4 text-sm font-base text-gray-500">
                 This guide will give you an overview of the different types of coworking
-                spaces available, and help you decide which one is right of r you.
+                spaces available, and help you decide which one is right for you.
               </p>
             </div>
           </div>
@@ -230,50 +230,50 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="pb-20 max-w-screen-lg mx-auto w-full flex justify-between">
-        <div className="px-4 border-r border-slate-200">
+      <div className="pb-20 max-w-screen-lg mx-auto w-full flex flex-wrap md:flex-row">
+        <div className="w-1/2 md:w-fit px-4 md:px-1 md:border-r border-slate-200 mb-8 md:mb-0">
           <Image src={WifiImage} alt="icon" className="w-auto h-8 flex mx-auto mb-4" />
-          <h6 className="text-base text-center">
+          <h6 className="text-base text-center w-3/4 md:w-100 mx-auto">
             Wi-Fi Network Availability
           </h6>
         </div>
-        <div className="px-4 border-r border-slate-200">
+        <div className="w-1/2 md:w-fit px-4 md:px-1 md:border-r border-slate-200 mb-8 md:mb-0">
           <Image src={PriceImage} alt="icon" className="w-auto h-8 flex mx-auto mb-4" />
-          <h6 className="text-base text-center">
+          <h6 className="text-base text-center w-3/4 md:w-100 mx-auto">
             Affordable Prices
           </h6>
         </div>
-        <div className="px-4 border-r border-slate-200">
+        <div className="w-1/2 md:w-fit px-4 md:px-1 md:border-r border-slate-200 mb-8 md:mb-0">
           <Image src={ComfortableImage} alt="icon" className="w-auto h-8 flex mx-auto mb-4" />
-          <h6 className="text-base text-center">
+          <h6 className="text-base text-center w-3/4 md:w-100 mx-auto">
             Comfortable Workspace
           </h6>
         </div>
-        <div className="px-4 border-r border-slate-200">
+        <div className="w-1/2 md:w-fit px-4 md:px-1 md:border-r border-slate-200 mb-8 md:mb-0">
           <Image src={ParkingImage} alt="icon" className="w-auto h-8 flex mx-auto mb-4" />
-          <h6 className="text-base text-center">
+          <h6 className="text-base text-center w-3/4 md:w-100 mx-auto">
             Wide Parking Area
           </h6>
         </div>
-        <div className="px-4 border-r border-slate-200">
+        <div className="w-1/2 md:w-fit px-4 md:px-1 md:border-r border-slate-200 mb-8 md:mb-0">
           <Image src={MosqueImage} alt="icon" className="w-auto h-8 flex mx-auto mb-4" />
-          <h6 className="text-base text-center">
+          <h6 className="text-base text-center w-3/4 md:w-100 mx-auto">
             Restroom and Mosque
           </h6>
         </div>
-        <div className="px-4">
+        <div className="w-1/2 md:w-fit px-4 md:px-1 mb-8 md:mb-0">
           <Image src={HourImage} alt="icon" className="w-auto h-8 flex mx-auto mb-4" />
-          <h6 className="text-base text-center">
+          <h6 className="text-base text-center w-3/4 md:w-100 mx-auto">
             24-hours Admin Helps
           </h6>
         </div>
       </div>
 
       <div className="relative">
-        <Image className="w-24 h-auto absolute left-4 top-0" src={DotsImage} alt="dot" />
-        <div className="py-20 max-w-screen-lg mx-auto w-full px-40">
-          <div className="flex justify-between">
-            <div className="w-1/2 px-4">
+        <Image className="w-24 h-auto absolute left-4 top-0 px-4 lg:px-0" src={DotsImage} alt="dot" />
+        <div className="py-20 max-w-screen-lg mx-auto w-full px-0 md:px-40">
+          <div className="flex flex-col md:flex-row">
+            <div className="w-100 md:w-1/2 px-4">
               <div className="h-80 relative flex items-center">
                 <div className="overflow-hidden rounded-xl image">
                   <Image src={CustomerImage} className="object-cover" alt="coca" />
@@ -281,8 +281,8 @@ export default function Home() {
                 <Image className="absolute w-40 h-auto left-0 bottom-8 -translate-x-24" src={LetterImage} alt="letter" />
               </div>
             </div>
-            <div class="w-1/2 px-4">
-              <h2 className="text-3xl font-medium">
+            <div className="w-100 md:w-1/2 px-4">
+              <h2 className="text-3xl font-medium mt-12 md:mt-0">
                 What you customer says about Coca Workspace
               </h2>
               <h6 className="text-sm font-base text-gray-500 mt-10">

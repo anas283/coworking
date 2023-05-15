@@ -4,7 +4,7 @@ import { Outfit } from 'next/font/google'
 const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Coca - Coworking Spaces',
+  title: 'Coca - The Best Coworking Spaces',
   description: 'Find the best coworking space here',
 }
 
